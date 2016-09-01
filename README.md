@@ -1,7 +1,7 @@
 # mapBoxList
 Simple jQuery plugin to create a mapBox map with a list beside.
 
-![alt text](https://lh6.googleusercontent.com/idbc3iZw2Lp89fsE--FY51oOe0L0ui_D-HSj77LHFs4c8BbaqjNMPxhr8PFjtjD36Cej6u0I4phGhO4=w1680-h925-rw "Logo Title Text 1")
+![Image map](https://lh6.googleusercontent.com/idbc3iZw2Lp89fsE--FY51oOe0L0ui_D-HSj77LHFs4c8BbaqjNMPxhr8PFjtjD36Cej6u0I4phGhO4=w1680-h925-rw "mapBoxList")
 
 #How to use
 Fisrt import required library
@@ -11,7 +11,7 @@ Fisrt import required library
 <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 <script src="myscripts/mapBoxList.js">
 ```
-Then I should create a div with an Id
+Then should create a div with an Id
 ```html
 <div id="map"></div>
 ```
