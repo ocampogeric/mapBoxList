@@ -52,8 +52,8 @@ $('#map').mapBoxList({
 #Json Settings
 Here you can set the location node where markers take it. location node is required to show markers and list items:
   - `locationNode:`
-  - `markerContent` By default only show location like a text.
-  - `ItemContent` By default only show a  `li` with a location like a text and blue background.
+  - `markerContent: 'name of Json node with marker content'` By default only show location like a text.
+  - `ItemContent: 'name of Json node with list item content'` By default only show a  `li` with a location like a text and blue background.
 
 For example:
 ```javascript
