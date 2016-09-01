@@ -1,7 +1,7 @@
 # mapBoxList
 Simple jQuery plugin to create a mapBox map with a list beside.
 
-![Image map](https://lh6.googleusercontent.com/idbc3iZw2Lp89fsE--FY51oOe0L0ui_D-HSj77LHFs4c8BbaqjNMPxhr8PFjtjD36Cej6u0I4phGhO4=w1680-h925-rw "mapBoxList")
+![Image map](https://lh3.googleusercontent.com/kbPGVRM3uGlWFERv6fWDoo5JRnAvTG8xugoEWzNHMfX5RO5em9f4jyXm6ufVCi-uoAqsrhd7=w1680-h941 "mapBoxList")
 
 #How to use
 Fisrt import required library
