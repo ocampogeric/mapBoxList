@@ -23,7 +23,7 @@ $('#map').mapBoxList({
 ```
 
 #General options
-
+The availbe options are:
   - `centerMap: [lat,lng]`
   - `zoom: numeric`
   - `apiKey:'<your apiKey here>'`
@@ -50,10 +50,10 @@ $('#map').mapBoxList({
 });
 ```
 #Json Settings
-Here you can set the location node where markers take it. location node is required to show markers and list items
-- `locationNode:`
-- `markerContent` By default only show location like a text.
-- `ItemContent` By default only show a  `li` with a location like a text and blue background.
+Here you can set the location node where markers take it. location node is required to show markers and list items:
+  - `locationNode:`
+  - `markerContent` By default only show location like a text.
+  - `ItemContent` By default only show a  `li` with a location like a text and blue background.
 
 For example:
 ```javascript
@@ -64,11 +64,11 @@ $('#map').mapBoxList({
   }
 });
 ```
-
 #Markers settings
 Here you can personalize the markers settings. The avaible options are:
--``
--``
+- `markerSymbol` By default is `circle`. you can see more here [maki icons](https://www.mapbox.com/maki-icons/)
+- `markerSize` By default is `large`
+- `markerColor` By default is `#0089ff`
 
 
 
