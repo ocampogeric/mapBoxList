@@ -1,4 +1,4 @@
-# mapBoxList
+# mapBoxList v1.0.0
 Simple jQuery plugin to create a mapBox map with a list beside.
 
 ![Image map](https://lh3.googleusercontent.com/kbPGVRM3uGlWFERv6fWDoo5JRnAvTG8xugoEWzNHMfX5RO5em9f4jyXm6ufVCi-uoAqsrhd7=w1680-h941 "mapBoxList")
@@ -71,9 +71,20 @@ Here you can personalize the markers settings. The avaible options are:
 - `markerColor` By default is `#0089ff`
 
 
-
-
-
+#Events handler
+If you want to capture a event, then you can call `onEvent` method with two params; `event` and `function`.
+######Example
+```javascript
+$("#map").mapBoxList({...})
+  .onEvent('ready',function(){
+    console.log("Map is ready now!!");
+    })
+  .onEvent('dragend',function(){
+    //you code here...
+  });
+```
+######Notes that you can add multiple calls at method.
+To get full event list, visit oficial website of [mapBox](https://www.mapbox.com/mapbox.js/api/v2.4.0/)
 
 
 
