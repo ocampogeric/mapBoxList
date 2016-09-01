@@ -19,7 +19,7 @@
                 ItemContent: 'itemContent'
             },
             mapStyles:{
-                Height: '600px',
+                height: '600px',
                 width: '100%'
             },
             markerSettings:{
