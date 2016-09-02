@@ -1,5 +1,5 @@
 /*
-mapBoxList.js v.1.0.0
+mapBoxList.js v.1.0.1
 Copyright (c) 2016 ocampogeric
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
@@ -68,18 +68,89 @@ IN THE SOFTWARE.
         if(defaults.on!=''){
             map.on(defaults.on,defaults.function);
         }
+        
         $.fn.loadMap = function () {
-            if(defaults.showList){      
-                listDiv.css({
-                    width:'30%',
-                    height: '100%',
-                    float:'left',
-                    overflow: 'auto'
-                });
-                mapDiv.css({
-                    width:'70%',
-                    height:'100%',
-                    float:'left'
+            if(defaults.showList){     
+                if($(window).width() >= 600){
+                    listDiv.css({
+                        width:'30%',
+                        height: '100%',
+                        float:'left',
+                        overflow: 'auto'
+                    });
+                    mapDiv.css({
+                        width:'70%',
+                        height:'100%',
+                        float:'left'
+                    });    
+                }else{
+                    if($(window).height()<=700){
+                        listDiv.css({
+                        width:'100%',
+                        height: '300px',
+                        float:'left',
+                        overflow: 'auto'
+                        });
+                       mapDiv.css({
+                        width:'100%',
+                        height:'200px',
+                        float:'left'
+                        }); 
+                    }else{
+                       listDiv.css({
+                        width:'100%',
+                        height: '300px',
+                        float:'left',
+                        overflow: 'auto'
+                        });
+                        mapDiv.css({
+                        width:'100%',
+                        height:'300px',
+                        float:'left'
+                        }); 
+                    }
+                    
+                }
+                $(window).resize(function(){
+                    if ($(window).width() <= 600) {
+                        if($(window).height()<=700){
+                            listDiv.css({
+                            width:'100%',
+                            height: '300px',
+                            float:'left',
+                            overflow: 'auto'
+                            });
+                            mapDiv.css({
+                                width:'100%',
+                                height:'200px',
+                                float:'left'
+                            }); 
+                        }else{
+                            listDiv.css({
+                                width:'100%',
+                                height: '300px',
+                                float:'left',
+                                overflow: 'auto'
+                            });
+                            mapDiv.css({
+                                width:'100%',
+                                height:'300px',
+                                float:'left'
+                            }); 
+                        }   
+                    }else{
+                        listDiv.css({
+                            width:'30%',
+                            height: '100%',
+                            float:'left',
+                            overflow: 'auto'
+                        });
+                        mapDiv.css({
+                            width:'70%',
+                            height:'100%',
+                            float:'left'
+                        });
+                    }
                 });
                 if(defaults.jsonData.length>0){
                     jQuery.each(defaults.jsonData, function(i, item) {
@@ -137,7 +208,7 @@ IN THE SOFTWARE.
                 });
                 mapDiv.css({
                     width:'100%',
-                    height:'100%',
+                    height:'100%;',
                     float:'left'
                 });
                 if(defaults.jsonData.length>0){
