@@ -203,13 +203,79 @@ IN THE SOFTWARE.
                     });
                 }
             }else{
-                listDiv.css({
-                    display: 'none'
-                });
-                mapDiv.css({
-                    width:'100%',
-                    height:'100%;',
-                    float:'left'
+                if($(window).width() >= 600){
+                    listDiv.css({
+                        display: 'none'
+                    });
+                    mapDiv.css({
+                        width:'100%',
+                        height:'100%',
+                        float:'left'
+                    });    
+                }else{
+                    if($(window).height()<=700){
+                        listDiv.css({
+                            dispaly:'none'
+                        });
+                        mapDiv.css({
+                            width:'100%',
+                            height:'300px',
+                            float:'left'
+                        });
+                        mapWrapper.css({
+                            height: '300px'
+                        });
+                    }else{
+                        listDiv.css({
+                            display: 'none'
+                        });
+                        mapDiv.css({
+                        width:'100%',
+                        height:'100%',
+                        float:'left'
+                        });
+                        mapWrapper.css({
+                            height: settings.mapStyles.height
+                        });
+                    }
+                }
+                $(window).resize(function(){
+                    if ($(window).width() <= 600) {
+                        if($(window).height()<=700){
+                            listDiv.css({
+                                display: 'none'
+                            });
+                            mapDiv.css({
+                                width:'100%',
+                                height:'300px',
+                                float:'left'
+                            });
+                            mapWrapper.css({
+                                height: '300px'
+                            });
+                        }else{
+                            listDiv.css({
+                                display: 'none'
+                            });
+                            mapDiv.css({
+                                width:'100%',
+                                height:'100%',
+                                float:'left'
+                            });
+                            mapWrapper.css({
+                                height: settings.mapStyles.height
+                            });
+                        }   
+                    }else{
+                        listDiv.css({
+                            display: 'none'
+                        });
+                        mapDiv.css({
+                            width:'100%',
+                            height:'100%',
+                            float:'left'
+                        });
+                    }
                 });
                 if(defaults.jsonData.length>0){
                     jQuery.each(defaults.jsonData, function(i, item) {
