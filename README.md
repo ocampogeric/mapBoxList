@@ -1,15 +1,15 @@
-# mapBoxList v1.0.0
+# mapBoxList v1
 Simple jQuery plugin to create a mapBox map with a list beside.
 
-![Image map](https://lh3.googleusercontent.com/kbPGVRM3uGlWFERv6fWDoo5JRnAvTG8xugoEWzNHMfX5RO5em9f4jyXm6ufVCi-uoAqsrhd7=w1680-h941 "mapBoxList")
+![Image map](http://gdurl.com/vL9T "mapBoxList")
 
 #How to use
-Fisrt import required library
+Fisrt download and import required library
 ```html
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
-<script src="myscripts/mapBoxList.js">
+<script src="myscripts/mapBoxList_v1.js">
 ```
 Then should create a div with an Id
 ```html
