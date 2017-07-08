@@ -3,7 +3,7 @@ Simple jQuery plugin to create a mapBox map with a list beside.
 
 ![Image map](http://gdurl.com/vL9T "mapBoxList")
 
-#How to use
+# How to use
 Fisrt download and import required library
 ```html
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -22,7 +22,7 @@ $('#map').mapBoxList({
 });
 ```
 
-#General options
+# General options
 The availbe options are:
   - `centerMap: [lat,lng]`
   - `zoom: numeric`
@@ -33,7 +33,7 @@ The availbe options are:
   - `mapDiv: 'id here'` //name of div to wrap map, default is mapDiv
   - `listDiv: 'id here'` //name of div to wrap list, default is mapList
   
-#Map style options
+# Map style options
 ```javascript
 mapStyles:{
   height:'height here' //height of wrapper map
@@ -49,7 +49,7 @@ $('#map').mapBoxList({
   }
 });
 ```
-#Json Settings
+# Json Settings
 Here you can set the location node where markers take it. location node is required to show markers and list items:
   - `locationNode:`
   - `markerContent: 'name of Json node with marker content'` By default only show location like a text.
@@ -64,16 +64,16 @@ $('#map').mapBoxList({
   }
 });
 ```
-#Markers settings
+# Markers settings
 Here you can personalize the markers settings. The avaible options are:
 - `markerSymbol` By default is `circle`. you can see more here [maki icons](https://www.mapbox.com/maki-icons/)
 - `markerSize` By default is `large`
 - `markerColor` By default is `#0089ff`
 
 
-#Events handler
+# Events handler
 If you want to capture a event, then you can call `onEvent` method with two params; `event` and `function`.
-######Example
+###### Example
 ```javascript
 $("#map").mapBoxList({...})
   .onEvent('ready',function(){
@@ -83,7 +83,7 @@ $("#map").mapBoxList({...})
     //you code here...
   });
 ```
-######Notes that you can add multiple calls at method.
+###### Notes that you can add multiple calls at method.
 To get full event list, visit oficial website of [mapBox](https://www.mapbox.com/mapbox.js/api/v2.4.0/)
 
 
